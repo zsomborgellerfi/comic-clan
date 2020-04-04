@@ -36,7 +36,10 @@
   "eslintConfig": {
     "extends": "react-app"
   },
-  "precommit": ["eslint-fix", "pretty"],
+  "precommit": [
+    "eslint-fix",
+    "pretty"
+  ],
   "browserslist": {
     "production": [
       ">0.2%",
