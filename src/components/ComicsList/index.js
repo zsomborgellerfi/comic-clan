@@ -1,1 +1,1 @@
-export { default } from './ComicsList';
+export { default } from "./ComicsList";

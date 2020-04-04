@@ -10,6 +10,7 @@
     "bootstrap": "^4.4.1",
     "lodash": "^4.17.15",
     "node-sass": "^4.13.1",
+    "prettier": "^2.0.2",
     "query-string": "^6.11.1",
     "react": "^16.13.1",
     "react-bootstrap": "^1.0.0",
@@ -28,11 +29,14 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "eslint-fix": "eslint ./src --fix",
+    "pretty": "prettier --write \"./**/*.{js,jsx,json}\""
   },
   "eslintConfig": {
     "extends": "react-app"
   },
+  "precommit": ["eslint-fix", "pretty"],
   "browserslist": {
     "production": [
       ">0.2%",

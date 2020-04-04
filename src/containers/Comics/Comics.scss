@@ -3,12 +3,63 @@
 .Comics {
   background: $bg-color-2;
   min-height: $full-height;
-
+  padding-top: 30px;
   &__rowTitle {
     margin: 30px 0;
     font-size: 32px;
     color: $text-color-5;
     font-weight: normal;
+    text-transform: capitalize;
+  }
+  &__searchInputWrapper {
+    background-color: transparent;
+    border: 3px solid #777777;
+    border-radius: 8px;
+    padding: 10px 18px;
+    margin-bottom: 30px;
+  }
+  &__searchIcon {
+    background-color: transparent;
+    border: none;
+  }
+  &__searchInput {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    color: $text-color-1;
+
+    &:focus {
+      background-color: transparent;
+      border: none;
+      outline: none;
+      color: $text-color-1;
+    }
+  }
+  &__filterSwitch {
+    margin-right: 15px;
+    border-radius: 20px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    text-transform: capitalize;
+    color: $text-color-4;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    padding: 10px 20px;
+    &Active,
+    &:active,
+    &:focus,
+    &:hover {
+      background-color: $button-color !important;
+      border-color: $button-color !important;
+      box-shadow: none !important;
+      color: white;
+    }
+    
   }
   .separator {
     margin: 70px 0;

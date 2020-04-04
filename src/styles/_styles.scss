@@ -19,6 +19,13 @@ a:link,
 a:active {
   text-decoration: none;
 }
+
+.form-control:focus {
+  border-color: #cccccc;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
 .container-fluid {
   padding-left: 30px;
   padding-right: 30px;
