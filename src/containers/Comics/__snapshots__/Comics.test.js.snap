@@ -1,0 +1,105 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ComicDetails should render Comics correctly 1`] = `
+<Container
+  className="Comics"
+  fluid={true}
+>
+  <div>
+    <Form
+      inline={false}
+      onSubmit={[Function]}
+    >
+      <InputGroup
+        className="Comics__searchInputWrapper"
+      >
+        <InputGroupPrepend>
+          <InputGroupText
+            className="Comics__searchIcon"
+          >
+            <IoIosSearch
+              color="#cccccc"
+              size={24}
+            />
+          </InputGroupText>
+        </InputGroupPrepend>
+        <FormControl
+          className="Comics__searchInput"
+          onChange={[Function]}
+          placeholder="Search by book name"
+        />
+      </InputGroup>
+    </Form>
+    <withRouter(LinkContainer)
+      className="Comics__filterSwitch Comics__filterSwitchActive"
+      key="year"
+      to="/comics/year"
+    >
+      <Button
+        active={false}
+        disabled={false}
+        type="button"
+        variant="primary"
+      >
+        year
+      </Button>
+    </withRouter(LinkContainer)>
+    <withRouter(LinkContainer)
+      className="Comics__filterSwitch "
+      key="writer"
+      to="/comics/writer"
+    >
+      <Button
+        active={false}
+        disabled={false}
+        type="button"
+        variant="primary"
+      >
+        writer
+      </Button>
+    </withRouter(LinkContainer)>
+    <withRouter(LinkContainer)
+      className="Comics__filterSwitch "
+      key="artist"
+      to="/comics/artist"
+    >
+      <Button
+        active={false}
+        disabled={false}
+        type="button"
+        variant="primary"
+      >
+        artist
+      </Button>
+    </withRouter(LinkContainer)>
+    <withRouter(LinkContainer)
+      className="Comics__filterSwitch "
+      key="owner"
+      to="/comics/owner"
+    >
+      <Button
+        active={false}
+        disabled={false}
+        type="button"
+        variant="primary"
+      >
+        owner
+      </Button>
+    </withRouter(LinkContainer)>
+    <withRouter(LinkContainer)
+      className="Comics__filterSwitch "
+      key="random"
+      to="/comics/random"
+    >
+      <Button
+        active={false}
+        disabled={false}
+        type="button"
+        variant="primary"
+      >
+        random
+      </Button>
+    </withRouter(LinkContainer)>
+  </div>
+</Container>
+`;

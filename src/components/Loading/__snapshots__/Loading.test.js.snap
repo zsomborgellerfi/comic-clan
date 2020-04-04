@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Loading should render Loading correctly 1`] = `
+<div
+  className="Loading__container"
+>
+  <Loading
+    color="#fff"
+    delay={0}
+    height={64}
+    type="spin"
+    width={64}
+  />
+</div>
+`;

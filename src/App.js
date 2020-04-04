@@ -8,8 +8,8 @@ import {
 } from "react-router-dom";
 import Comics from "./containers/Comics";
 import ComicDetails from "./containers/ComicDetails";
-import { comicFilterKeys } from "./utils/comicFilterKeys";
 import ScrollToTop from "./components/ScrollToTop";
+import { comicFilterKeys } from "./utils/comicFilterKeys";
 import "./styles/_styles.scss";
 
 const App = () => {

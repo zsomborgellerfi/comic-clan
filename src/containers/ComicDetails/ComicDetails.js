@@ -12,7 +12,7 @@ import fullStar from "./full_star.svg";
 import emptyStar from "./empty_star.png";
 import "./ComicDetails.scss";
 
-class ComicDetails extends React.Component {
+export class ComicDetails extends React.Component {
   componentDidMount() {
     this.fetchComics();
   }
@@ -29,6 +29,7 @@ class ComicDetails extends React.Component {
       return comic.name.includes(this.props.match.params.name);
     });
 
+    // get 5 other comics randomly
     const otherComics = _.shuffle(
       comics
         .filter((comic) => !comic.name.includes(this.props.match.params.name))
@@ -56,11 +57,19 @@ class ComicDetails extends React.Component {
                     {comic.name} ({comic.year}){" "}
                   </h1>
                   <div className={"ComicDetails__ratings"}>
-                    {[...Array(comic.rating)].map(() => (
-                      <img src={fullStar} alt={`${comic.rating} star`} />
+                    {[...Array(comic.rating)].map((v, i) => (
+                      <img
+                        key={i}
+                        src={fullStar}
+                        alt={`${comic.rating} star`}
+                      />
                     ))}
-                    {[...Array(5 - comic.rating)].map(() => (
-                      <img src={emptyStar} alt={`${comic.rating} star`} />
+                    {[...Array(5 - comic.rating)].map((v, i) => (
+                      <img
+                        key={i}
+                        src={emptyStar}
+                        alt={`${comic.rating} star`}
+                      />
                     ))}
                   </div>
                 </div>

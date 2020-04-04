@@ -1,7 +1,6 @@
 import React from "react";
 import ComicsListItem from "../ComicsListItem";
 import { Row, Col } from "react-bootstrap";
-
 import "./ComicsList.scss";
 
 const ComicsList = ({ comics }) => {

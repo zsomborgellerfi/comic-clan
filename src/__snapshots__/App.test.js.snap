@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App should render App correctly 1`] = `
+<BrowserRouter>
+  <Header />
+  <withRouter(ScrollToTop) />
+  <Switch>
+    <Route
+      component={
+        Object {
+          "$$typeof": Symbol(react.memo),
+          "WrappedComponent": [Function],
+          "compare": null,
+          "displayName": "Connect(Comics)",
+          "type": [Function],
+        }
+      }
+      exact={true}
+      path="/comics/:category?"
+    />
+    <Route
+      component={
+        Object {
+          "$$typeof": Symbol(react.memo),
+          "WrappedComponent": [Function],
+          "compare": null,
+          "displayName": "Connect(ComicDetails)",
+          "type": [Function],
+        }
+      }
+      exact={true}
+      path="/comic/:name"
+    />
+    <Redirect
+      to="/comics/year"
+    />
+  </Switch>
+</BrowserRouter>
+`;

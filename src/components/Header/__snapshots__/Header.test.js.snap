@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header should render Header correctly 1`] = `
+<Container
+  className="Header__container"
+  fluid={true}
+>
+  <Navbar
+    className="Header__navbar"
+    collapseOnSelect={false}
+    expand={true}
+    variant="light"
+  >
+    <withRouter(LinkContainer)
+      to="/"
+    >
+      <img
+        alt="Comic Clan"
+        src="logo.svg"
+      />
+    </withRouter(LinkContainer)>
+  </Navbar>
+</Container>
+`;

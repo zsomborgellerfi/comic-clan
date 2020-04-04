@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ComicsListItem should render ComicsListItem correctly 1`] = `
+<Link
+  to="/comic/test name"
+>
+  <div
+    className="ComicsListItem__container"
+  >
+    <img
+      alt="test name"
+      className="ComicsListItem__image"
+      src="test image"
+    />
+    <div
+      className="ComicsListItem__name"
+    >
+      test name
+    </div>
+    <div>
+      <span
+        className="ComicsListItem__ownedBy"
+      >
+        Owned By
+      </span>
+      <span
+        className="ComicsListItem__owner"
+      >
+         
+        test owner
+      </span>
+    </div>
+  </div>
+</Link>
+`;

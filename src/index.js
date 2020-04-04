@@ -11,7 +11,6 @@ import rootSaga from "./sagas";
 
 const sagaMiddleware = createSagaMiddleware();
 
-//TODO REMOVE DEV TOOLS
 const store = createStore(
   reducer,
   composeWithDevTools(applyMiddleware(sagaMiddleware, logger))

@@ -11,7 +11,7 @@ import { Form, InputGroup, Button, Container } from "react-bootstrap";
 import { IoIosSearch } from "react-icons/io";
 import _ from "lodash";
 
-class Comics extends React.Component {
+export class Comics extends React.Component {
   constructor(props) {
     super(props);
     const urlCategory = props.match.params.category;
