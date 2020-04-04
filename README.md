@@ -1,49 +1,68 @@
-# ComicClan - React Webapp Specification
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-### Description
+## Available Scripts
 
+In the project directory, you can run:
 
-ComicClan, an online community of comic book enthusiasts, has contacted you to help them develop their new online library of comic books. The library will represent the combined collection of comic books owned by the community members.
+### `yarn start`
 
-Fortunately enough, all the data is already cataloged into their DB with a simple API delivering all the information you need. They are asking that you develop a React web-app based on a provided design.
+Runs the app in the development mode.<br />
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
+The page will reload if you make edits.<br />
+You will also see any lint errors in the console.
 
-### Specifications
+### `yarn test`
 
-- Implement the following designs into a working web application based on React.
-- The API endpoint for the list of comic books is accessible at `https://comicclan.vett.io/comics`. 
-  - For authentication pass the following header:  `Authorization: Bearer ComicClanVettIO2019`.
-  - If you add the `?q=<term>` url parameter you’ll get a filtered list of comic books based on their name.
-- Parse the API response and display the results as outlined in the design (including the inner page).
-- The application should allow the following grouping categories:
-  - Year (default)
-  - Writer
-  - Artist
-  - Owner
-  - Random
-- The application should allow searching for comic books based on a name (or partial name).
-- It is highly recommended that you use [Redux](https://redux.js.org/) for state management and [ReactRouter](https://reacttraining.com/react-router/web/guides/quick-start) for routing.
-- You may use any boilerplate of your choice or start completely clean.
+Launches the test runner in the interactive watch mode.<br />
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### Bonus Points
+### `yarn build`
 
-- Use inJS style libraries such as [styled-components](https://www.styled-components.com/).
-- Use [Sagas](https://redux-saga.js.org/) for async calls management.
-- Allow grouping through the URL of the app.
+Builds the app for production to the `build` folder.<br />
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
+The build is minified and the filenames include the hashes.<br />
+Your app is ready to be deployed!
 
-### Evaluation
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-- Design implemented according to attached files using React Components. Result should be as close as possible to the design provided.
-- The application should be responsive and support mobile browsers.
-- Proper routing including a route for the home, inner book page and support for category grouping through the URL.
-- Searching for a comic book (on the main page) filters the current view to show only relevant results.
+### `yarn eject`
 
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-### Submission
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Please organize, design, test and document your code as if it were going into production. Also include detailed instructions on how to build and serve your code;  finally push your changes to the master branch. After you have pushed your code, let us know so we can review your work, **if you won’t let us know you’re done we won’t know we should start testing.**
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-All the best and good luck!
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-The [Vett.io](https://vett.io) Team.
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+
+### Analyzing the Bundle Size
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+
+### Making a Progressive Web App
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+
+### Advanced Configuration
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+
+### Deployment
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+
+### `yarn build` fails to minify
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify

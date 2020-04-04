@@ -1,0 +1,23 @@
+@import '../../styles/variables';
+
+.ComicsListItem {
+  &__container {
+    color: $text-color-1;
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+  }
+  &__image {
+    width: 100%;
+    max-width: 200px;
+  }
+  &__name {
+    font-size: 22px;
+    margin: 16px 0 9px;
+  }
+  &__ownedBy {
+    color: $text-color-3;
+    margin-right: 3px;
+    font-weight: 500;
+  }
+}

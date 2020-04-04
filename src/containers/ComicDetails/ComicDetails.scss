@@ -1,0 +1,75 @@
+@import '../../styles/variables';
+
+.ComicDetails {
+  background: $bg-color-2;
+  min-height: $full-height;
+  &__comicWrapper {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 70px;
+  }
+  &__image {
+    margin-right: 25px;
+    img {
+      width: 340px;
+    }
+  }
+  &__name {
+    display: flex;
+    flex-flow: row wrap;
+    h1 {
+      font-size: 32px;
+      line-height: 37px;
+      margin: 0 40px 0 0;
+      color: $text-color-5;
+    }
+  }
+  &__ratings {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    img {
+      width: 25px;
+      height: 25px;
+    }
+  }
+  &__info {
+    color: $text-color-3;
+    margin: 14px 0 34px;
+    line-height: 20px;
+    font-weight: 500;
+    div {
+      margin-bottom: 10px;
+      span {
+        color: $text-color-1;
+        font-weight: bold;
+        margin-left: 5px;
+      }
+    }
+  }
+  &__summary {
+    color: $text-color-1;
+    font-weight: bold;
+  }
+  &__link {
+    padding: 32px 0 36px;
+    a {
+      color: $text-color-4;
+      font-size: 20px;
+      color: #777777;
+      font-weight: 500;
+      span {
+        margin-left: 5px;
+        text-decoration-line: underline;
+      }
+    }
+  }
+  h3 {
+    margin: 30px 0;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 37px;
+    color: $text-color-5;
+  }
+}

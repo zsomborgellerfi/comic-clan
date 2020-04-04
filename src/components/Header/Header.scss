@@ -1,0 +1,14 @@
+@import '../../styles/variables';
+
+.Header {
+  &__container {
+    background: $bg-color-1;
+  }
+  &__navbar {
+    height: $navbar-height;
+    img {
+      height: 30px;
+      cursor: pointer;
+    }
+  }
+}

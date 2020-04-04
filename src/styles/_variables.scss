@@ -1,0 +1,57 @@
+//== Media queries breakpoints
+//
+//## Define the breakpoints at which your layout will change, adapting to different screen sizes.
+
+// Smallest screen / phone
+//** Deprecated `$screen-xxs` as of v3.0.1
+$screen-xxs: 340px !default;
+//** Deprecated `$screen-xxs-min` as of v3.2.0
+$screen-xxs-min: $screen-xxs !default;
+
+// Extra small screen / phone
+//** Deprecated `$screen-xs` as of v3.0.1
+$screen-xs: 480px !default;
+//** Deprecated `$screen-xs-min` as of v3.2.0
+$screen-xs-min: $screen-xs !default;
+
+// Small screen / tablet
+//** Deprecated `$screen-sm` as of v3.0.1
+$screen-sm: 768px;
+$screen-sm-min: $screen-sm !default;
+//** Deprecated `$screen-tablet` as of v3.0.1
+
+// Medium screen / desktop
+//** Deprecated `$screen-md` as of v3.0.1
+$screen-md: 992px !default;
+$screen-md-min: $screen-md !default;
+//** Deprecated `$screen-desktop` as of v3.0.1
+
+// Large screen / wide desktop
+//** Deprecated `$screen-lg` as of v3.0.1
+$screen-lg: 1200px !default;
+$screen-lg-min: $screen-lg !default;
+
+// So media queries don't overlap when required, provide a maximum
+$screen-xxs-max: ($screen-xs-min - 1) !default;
+$screen-xs-max: ($screen-sm-min - 1) !default;
+$screen-sm-max: ($screen-md-min - 1) !default;
+$screen-md-max: ($screen-lg-min - 1) !default;
+
+//== Media Queries
+$mq-xxs: 'screen and (min-width: #{$screen-xxs})';
+$mq-xs: 'screen and (min-width: #{$screen-xs})';
+$mq-sm: 'screen and (min-width: #{$screen-sm})';
+$mq-md: 'screen and (min-width: #{$screen-md})';
+$mq-lg: 'screen and (min-width: #{$screen-lg})';
+
+$bg-color-1: #535353;
+$bg-color-2: #333333;
+
+$text-color-1: #cccccc;
+$text-color-2: #5a5a5a;
+$text-color-3: #999999;
+$text-color-4: #777777;
+$text-color-5: #aaaaaa;
+
+$navbar-height: 73px;
+$full-height: calc(100vh - #{$navbar-height});

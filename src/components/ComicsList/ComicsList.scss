@@ -1,0 +1,11 @@
+@import '../../styles/variables';
+
+.ComicsList {
+  &__container {
+    display: flex;
+    flex-direction: column;
+  }
+  &__col {
+    max-width: 20%;
+  }
+}

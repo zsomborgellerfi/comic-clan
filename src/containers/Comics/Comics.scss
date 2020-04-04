@@ -1,0 +1,16 @@
+@import '../../styles/variables';
+
+.Comics {
+  background: $bg-color-2;
+  min-height: $full-height;
+
+  &__rowTitle {
+    margin: 30px 0;
+    font-size: 32px;
+    color: $text-color-5;
+    font-weight: normal;
+  }
+  .separator {
+    margin: 70px 0;
+  }
+}
